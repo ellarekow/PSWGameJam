@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://bk0b86vg30kw8"]
+[gd_scene load_steps=3 format=3 uid="uid://bk0b86vg30kw8"]
+
+[ext_resource type="Script" path="res://Scripts/test_counter_increment.gd" id="1_qfbb2"]
+[ext_resource type="PackedScene" uid="uid://dqqktfusong5s" path="res://Scenes/day_counter_gui.tscn" id="1_wov1i"]
 
 [node name="Game" type="Node2D"]
+
+[node name="DayCounter" parent="." instance=ExtResource("1_wov1i")]
+script = ExtResource("1_qfbb2")
+
+[node name="Camera2D" type="Camera2D" parent="."]
