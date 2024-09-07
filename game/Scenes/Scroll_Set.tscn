@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://ldsjjviiwqp6"]
+
+[ext_resource type="PackedScene" uid="uid://cx2rdkuytwmpb" path="res://Scenes/Scroll.tscn" id="1_jgsmg"]
+
+[node name="ScrollSet" type="Panel"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 858.0
+offset_bottom = 400.0
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(800, 400)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 400
+
+[node name="Scroll" parent="MarginContainer/HBoxContainer" instance=ExtResource("1_jgsmg")]
+layout_mode = 2
+
+[node name="Scroll2" parent="MarginContainer/HBoxContainer" instance=ExtResource("1_jgsmg")]
+layout_mode = 2
+
+[node name="Scroll3" parent="MarginContainer/HBoxContainer" instance=ExtResource("1_jgsmg")]
+layout_mode = 2
