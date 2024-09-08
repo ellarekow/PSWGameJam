@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bk0b86vg30kw8"]
+[gd_scene load_steps=4 format=3 uid="uid://bk0b86vg30kw8"]
 
 [ext_resource type="PackedScene" uid="uid://dqqktfusong5s" path="res://Scenes/day_counter_gui.tscn" id="1_wov1i"]
 [ext_resource type="Script" path="res://Scripts/day_counter_gui.gd" id="2_ibqg5"]
 [ext_resource type="Texture2D" uid="uid://dq3m4hgstkyu5" path="res://assets/Desk.png" id="3_lq53e"]
-[ext_resource type="PackedScene" uid="uid://cx2rdkuytwmpb" path="res://Scenes/Scroll.tscn" id="4_vyhdh"]
 
 [node name="Game" type="Node2D"]
 
@@ -17,9 +16,3 @@ texture_filter = 1
 position = Vector2(0, 105)
 scale = Vector2(3.59833, 3.59833)
 texture = ExtResource("3_lq53e")
-
-[node name="Scroll" parent="." instance=ExtResource("4_vyhdh")]
-offset_left = -256.0
-offset_top = -5.0
-offset_right = -256.0
-offset_bottom = -5.0
